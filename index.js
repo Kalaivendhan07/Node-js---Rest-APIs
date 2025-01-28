@@ -8,11 +8,18 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MySQL connection
+// const db = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "root",
+//   database: "todo_app",
+// });
+
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "root",
-  database: "todo_app",
+  host: "b6xdcs1w7iq9mztofky2-mysql.services.clever-cloud.com",
+  user: "uaypidusshorpusf",
+  password: "AKYbOskQ7amuZA9O4IC7",
+  database: "b6xdcs1w7iq9mztofky2",
 });
 
 db.connect((err) => {
